@@ -1,0 +1,246 @@
+/* app.css - Modern Auction dApp Styling */
+
+/* Base Styles */
+:root {
+  --primary-color: #4e44ce;
+  --secondary-color: #6c5ce7;
+  --dark-color: #2d3436;
+  --light-color: #f5f6fa;
+  --success-color: #00b894;
+  --warning-color: #fdcb6e;
+  --danger-color: #d63031;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wallet-info span {
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  font-size: 0.9rem;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #b2b2b2;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(78, 68, 206, 0.2);
+}
+
+/* Auction Grid Styles */
+.auctions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.auction-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.auction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auction-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.auction-card p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Bid Form Styles */
+.bid-form {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.bid-form input {
+  flex: 1;
+  padding: 8px 12px;
+}
+
+.bid-form button {
+  padding: 8px 15px;
+}
+
+/* Notification Styles */
+.notification {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: var(--border-radius);
+  background-color: var(--success-color);
+  color: white;
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+}
+
+.notification.error {
+  background-color: var(--danger-color);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading State */
+.loading-text {
+  text-align: center;
+  color: var(--primary-color);
+  font-style: italic;
+  margin: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .wallet-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .auctions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status-active {
+  background-color: rgba(0, 184, 148, 0.2);
+  color: var(--success-color);
+}
+
+.status-ended {
+  background-color: rgba(214, 48, 49, 0.2);
+  color: var(--danger-color);
+}
+
+/* Price Highlight */
+.price-highlight {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
