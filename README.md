@@ -1,5 +1,5 @@
 
-# 🗳️ Smart Voting System DApp
+# 🗳️ Auction-House DApp
 
 A decentralized voting system built using Solidity smart contracts and a React-based frontend, deployed on the local Ethereum blockchain using MetaMask and Hardhat.
 
@@ -8,8 +8,8 @@ A decentralized voting system built using Solidity smart contracts and a React-b
 ## 🚀 Features
 
 - Add, update, and delete:
-  - 🪪 Voters
-  - 👤 Candidates
+  - 🪪 Auction-House
+  - 👤 bidders
   - 📌 Positions
 - 🗳️ Vote by candidate name
 - 📊 Live voting results
@@ -56,7 +56,7 @@ A decentralized voting system built using Solidity smart contracts and a React-b
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/yourusername/voting-dapp.git
+git https://github.com/bijemoderne/Auction-House/edit/main/README.md
 cd voting-dapp
 ```
 
@@ -96,8 +96,8 @@ npm start
 
 ## 🔐 Admin Access
 
-- Username: `Regis`
-- Password: `123`
+- Username: `admin`
+- Password: `admin123`
 
 ---
 
@@ -120,7 +120,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## 👨‍💻 Author
 
-**Regis Nkundimana**  
+**jeremie**  
 _Rwanda, 2025_  
 [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
 
