@@ -1,7 +1,7 @@
 
 # 🗳️ Auction-House DApp
 
-A decentralized voting system built using Solidity smart contracts and a React-based frontend, deployed on the local Ethereum blockchain using MetaMask and Hardhat.
+A decentralized  system built using Solidity smart contracts and a React-based frontend, deployed on the local Ethereum blockchain using MetaMask and Hardhat.
 
 ---
 
@@ -103,10 +103,8 @@ npm start
 
 ## 📸 Screenshots
 
-> Add screenshots of Admin Panel, Voting Form, and Results Table here
-<img width="875" alt="Screenshot 2025-05-04 014035" src="https://github.com/user-attachments/assets/73efb4ce-9a14-44a3-b372-b1fcda338108" />
-<img width="889" alt="Screenshot 2025-05-04 014150" src="https://github.com/user-attachments/assets/e331f230-cda6-467d-817d-41cf4dd9be3e" />
-<img width="907" alt="Screenshot 2025-05-04 014212" src="https://github.com/user-attachments/assets/b20d4c35-1343-430a-8dfe-6e98900e4f48" />
+> Add screenshots of Admin Panel, Auction-House, and Results Table here
+
 
 <img width="920" alt="Voter" src="https://github.com/user-attachments/assets/4b055a1d-5199-4aa0-956e-cc9d4bb406c3" />
 
